@@ -1,0 +1,114 @@
+﻿.product_card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 18px;
+    border: 1px solid #e5e7eb;
+    border-radius: 24px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.product_card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 42px rgba(15, 23, 42, 0.12);
+}
+
+.product_card_badges {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+
+.product_badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.rating_badge {
+    color: #1f6f4d;
+    background-color: rgba(40, 167, 69, 0.12);
+}
+
+.sold_badge {
+    color: #1d4ed8;
+    background-color: rgba(37, 99, 235, 0.1);
+}
+
+.star {
+    display: inline-block;
+    color: #f5c518;
+    font-size: 0.92rem;
+}
+
+.product_image_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+    background-color: #f8fafc;
+    border-radius: 22px;
+}
+
+.product_image {
+    max-width: 100%;
+    max-height: 190px;
+    object-fit: contain;
+}
+
+.product_body {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.product_category {
+    margin: 0;
+    color: #6b7280;
+    font-size: 0.88rem;
+    text-transform: capitalize;
+}
+
+.product_title {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.35;
+    color: #111827;
+}
+
+.product_pricing {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+}
+
+.product_price {
+    font-size: 1.4rem;
+    color: #111827;
+}
+
+.product_oldprice {
+    color: #9ca3af;
+    text-decoration: line-through;
+    font-size: 0.95rem;
+}
+
+.product_discount {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 8px 12px;
+    border-radius: 999px;
+    background-color: #ffe7e7;
+    color: #c62828;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
